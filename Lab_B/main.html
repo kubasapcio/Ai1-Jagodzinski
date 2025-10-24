@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lista zadań - Todo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Lista zadań</h1>
+
+        <div class="search-row">
+            <input type="search" id="wyszukaj" placeholder="Wyszukaj zadanie" />
+            <button id="clearSearch">Wyczyść</button>
+        </div>
+
+        <form id="formularz" class="form-row">
+            <input type="text" id="zadania" name="zadania" placeholder="Wpisz zadanie" required />
+            <input type="date" id="data" name="data" required />
+            <button type="submit">Dodaj zadanie</button>
+        </form>
+
+        <ul id="lista"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
