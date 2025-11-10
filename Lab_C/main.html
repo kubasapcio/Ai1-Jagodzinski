@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Map Puzzle Challenge</title>
+
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <canvas
+      id="puzzle-canvas"
+      width="400"
+      height="400"
+      style="display: none"
+    ></canvas>
+  </head>
+  <body>
+    <div id="table-1" class="table">
+      <h2>1. Pełna Mapa (Leaflet)</h2>
+      <div id="map-container">
+        <div id="map"></div>
+      </div>
+
+      <button id="get-location-btn">Pobierz Aktualną Lokalizację</button>
+      <button id="get-map-btn">Pobierz Mapę i Utwórz Puzzle</button>
+      <p>Wskazówka: Przybliż wybrany obszar, aby stworzyć łamigłówkę.</p>
+    </div>
+
+    <div id="table-2" class="table">
+      <h2>2. Puzzle do Ułożenia</h2>
+      <div id="puzzle-source" class="puzzle-grid"></div>
+    </div>
+
+    <div id="table-3" class="table">
+      <h2>3. Obszar Układania</h2>
+      <div id="puzzle-target" class="puzzle-grid"></div>
+    </div>
+
+    <script src="leaflet/leaflet-src.js"></script>
+    <script src="leaflet/leaflet-providers.js"></script>
+    <script src="leaflet/leaflet-image.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
